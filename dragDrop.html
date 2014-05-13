@@ -19,31 +19,186 @@
     	<div id = "heading">
         	<h1><center> Drag & Drop </center></h1>
     	</div>
-        
-        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #0066FF;">
-Your browser does not support the HTML5 canvas tag.
-		</canvas>
-        <!--<table width="200" border="1">
-  <tr>
-    <td><b><center>Command</center></b></td>
-    <td><b><center>Linux Representation</center></b></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table> -->
+        <div id="container"></div>
+   		<script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.2.min.js"></script>
+    	<script defer="defer">
+      		var stage = new Kinetic.Stage({
+        		container: 'container',
+        		width: 2000,
+        		height: 3000
+      		});
+      
+      		var layer = new Kinetic.Layer();
 
-		<script>
-			var c=document.getElementById("myCanvas");
-			var ctx=c.getContext("2d");	
-			ctx.font = "30px Arial";
-			ctx.fillText("Hello World",10,50);
-			ctx.fillStyle="#000000"
-		</script>
+      		var ls = new Kinetic.Text({
+        		x: 10,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'ls',
+        		fill: 'black',
+				draggable: true
+      		});
+	   
+	   		var cd = new Kinetic.Text({
+        		x: 80,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'cd',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var cp = new Kinetic.Text({
+        		x: 150,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'cp',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var mkdir = new Kinetic.Text({
+        		x: 220,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'mkdir',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var man = new Kinetic.Text({
+        		x: 290,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'man',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var mv = new Kinetic.Text({
+        		x: 360,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'mv',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var date = new Kinetic.Text({
+        		x: 430,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'date',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var df = new Kinetic.Text({
+        		x: 500,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'df',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var du = new Kinetic.Text({
+        		x: 570,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'du',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var tops = new Kinetic.Text({
+        		x: 640,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'top',
+        		fill: 'black',
+				draggable: true
+      		}); 
+			
+			var ps = new Kinetic.Text({
+        		x: 710,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'ps',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var uname = new Kinetic.Text({
+        		x: 780,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'uname',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var gzip = new Kinetic.Text({
+        		x: 860,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'gzip',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var gunzip = new Kinetic.Text({
+        		x: 930,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'gunzip',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+			var clear = new Kinetic.Text({
+        		x: 1010,
+        		y: 10,
+        		fontFamily: 'Calibri',
+        		fontSize: 24,
+        		text: 'clear',
+        		fill: 'black',
+				draggable: true
+      		});
+			
+      
+      		layer.add(ls);
+	  		layer.add(cd);
+			layer.add(cp);
+			layer.add(mkdir);
+			layer.add(man);
+			layer.add(mv);
+			layer.add(date);
+			layer.add(df);
+			layer.add(du);
+			layer.add(tops);
+			layer.add(ps);
+			layer.add(uname);
+			layer.add(gzip);
+			layer.add(gunzip);
+			layer.add(clear);
+      		stage.add(layer);
+			
+			
+    	</script>
 	</body>
 </html>
