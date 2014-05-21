@@ -11,7 +11,7 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="basicCommands.html">Basic Commands</a></li>
-				<li><a href="advanceCommands.html">Advanced Commands</a></li>
+				<li><a href="commandLine.html">Linux Command Line</a></li>
 				<li><a href="dragDrop.html">Drag & Drop</a></li>
 			</ul>
 		</div>
@@ -19,6 +19,7 @@
     	<div id = "heading">
         	<h1><center> Drag & Drop </center></h1>
     	</div>
+        <p> Drag the command to the corresponding picture </p>
         <div id="container"></div>
    		<script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.2.min.js"></script>
     	<script defer="defer">
@@ -180,6 +181,16 @@
 				draggable: true
       		});
 			
+			/*var imgClear = new Image();
+      		imgClear.onload = function() { */
+        	/*var clearImg = new Kinetic.Image({
+          	x: 200,
+          	y: 50,
+          	image: clr,
+          	width: 106,
+         	height: 118
+        	});*/
+			
       
       		layer.add(ls);
 	  		layer.add(cd);
@@ -196,8 +207,10 @@
 			layer.add(gzip);
 			layer.add(gunzip);
 			layer.add(clear);
+			//layer.add(clearImg);
       		stage.add(layer);
 			
+			clr.src = 'C:\Users\Kez\Documents\GitHub\Dissertation\clear.jpg';
 			
     	</script>
 	</body>
